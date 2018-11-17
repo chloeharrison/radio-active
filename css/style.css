@@ -1,0 +1,254 @@
+/*Body of the website*/
+body {
+  
+ }
+
+/*Body of the website*/
+
+
+/* Start of Navigation  */
+
+
+
+
+
+
+
+/* End of Navigation  */
+
+
+#brand-image /* Logo  */
+
+    	{
+
+    		height: 35px;
+
+    	}
+
+
+/* Carousel   */
+.carousel-caption {
+          top: 50%;
+          transform: translateY(-50%);
+      }
+
+
+ /* Start of Search   */
+
+	  #result {
+   position: absolute;
+   width: 100%;
+   max-width:1140px;
+   cursor: pointer;
+   overflow-y: auto;
+   max-height: 400px;
+   box-sizing: border-box;
+   z-index: 1001;
+  }
+  .link-class:hover{
+   background-color:#f1f1f1;
+       }
+      
+
+
+/* End of Search   */	  
+ /* How it works    */
+.worksbanner{
+ background-image: url("../img/signup.jpg");
+    opacity:0.75;
+    height:50%;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ;
+    
+}
+
+
+
+#artistButton1{
+    margin-left:40px;
+    margin-right:50px;
+     border-radius:10px;
+    background-color: #DDDDDE;
+   border: 1px solid #DDDDDE;
+    height:40px;
+    margin-top:300px;
+}
+
+
+#signupbutton{text-align: center;
+margin-top:180px;
+
+}
+
+
+
+	  
+
+
+/*--------------------------------------------------
+    [Button]
+----------------------------------------------------*/
+
+.btn-dark-brd {
+  position: relative;
+  display: inline-block;
+  line-height: 1.4;
+  color: #34343c;
+  text-align: center;
+  background: transparent;
+  background-image: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #34343c;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-dark-brd:focus, .btn-dark-brd:active:focus, .btn-dark-brd.active:focus, .btn-dark-brd.focus, .btn-dark-brd:active.focus, .btn-dark-brd.active.focus {
+  outline: none;
+}
+
+.btn-dark-brd:hover {
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.btn-dark-brd:hover, .btn-dark-brd:focus, .btn-dark-brd.focus {
+  color: #fff;
+  background: #34343c;
+  border-color: #34343c;
+  text-decoration: none;
+}
+
+.btn-dark-brd:after, .btn-dark-brd:before {
+  background: transparent;
+}
+
+.btn-dark-brd:active, .btn-dark-brd.active {
+  background-image: none;
+  outline: 0;
+}
+
+.btn-dark-brd.disabled, .btn-dark-brd[disabled],
+fieldset[disabled] .btn-dark-brd {
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}
+
+.btn-dark-brd .btn-base-element-xs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border-left: 1px solid #2b2b31;
+  padding: 6px 9px;
+}
+
+.btn-dark-brd .btn-base-element-sm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border-left: 1px solid #2b2b31;
+  padding: 9px 11px;
+}
+
+.btn-dark-brd .btn-base-element-md {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border-left: 1px solid #2b2b31;
+  padding: 12px 13px;
+}
+
+.btn-dark-brd .btn-base-element-lg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border-left: 1px solid #2b2b31;
+  padding: 15px 15px;
+}
+
+.btn-base-sm {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 9px 22px;
+}
+
+
+
+	   
+	  
+	  
+	  
+	  /* Footer  */  
+	  
+footer {
+          width: 100%;
+          background-color: #f8f8f8;
+          padding: 1%;
+          color: #777777;
+          border: 1px solid #e7e7e7;
+          border-radius: 3px;
+      }
+	  
+	  
+ 
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #e84a64;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+#brand-image{
+    
+    height:80px;
+    width:120px;
+    margin-top:-25px;
+}

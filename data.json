@@ -1,0 +1,93 @@
+
+[
+  {
+    "name":"<a href='rebeccaRoss.html'>Rebecca Ross</a>",
+    "image": "img/spark.jpeg",
+    "song":"Spark"
+         
+      
+  },
+  {
+    "name":"<a href='rebeccaRoss.html'>Rebecca Ross</a>",
+    "image": "img/creature.jpeg",
+    "song":"Creature"
+  },
+  {
+    "name":"<a href='dannyIsaac.html'>Danny Issac</a>",
+    "image": "img/nothingWorse.jpeg",
+    "song":"Nothing Worse"
+  },
+  {
+    "name":"<a href='dannyIsaac.html'>Danny Issac</a>",
+    "image": "img/careNot.jpeg",
+    "song":"Care Not"
+  },
+  {
+    "name":"<a href='lauraLune.html'>Laura Lune</a>",
+    "image": "img/lauraLune.jpeg",
+    "song":"Laura Lune"
+  },
+  {
+    "name":"<a href='lauraLune.html'>Laura Lune</a>",
+    "image": "img/brightLights.jpeg",
+    "song":"Bright Lights"
+  },
+  {
+    "name":"<a href='lilYammer.html'>Lil Yammer</a>",
+    "image": "img/untitled.jpeg",
+    "song":"Untitled"
+  },
+  {
+    "name":"<a href='lilYammer.html'>Lil Yammer</a>",
+    "image": "img/getIt.jpeg",
+    "song":"Get it"
+  },
+  {
+    "name":"<a href='sashaDrawl.html'>Sasha Drawl</a>",
+    "image": "img/blackSmoke.jpg",
+    "song":"Black Smoke"
+  },
+  {
+    "name":"<a href='sashaDrawl.html'>Sasha Drawl</a>",
+    "image": "img/lioness.jpeg",
+    "song":"Lioness"
+  },
+  {
+    "name":"<a href='mullahGang.html'>Mullah Gang</a>",
+    "image": "img/moneySoul.png",
+    "song":"Money Soul"
+  },
+  {
+    "name":"<a href='mullahGang.html'>Mullah Gang</a>",
+    "image": "img/burnitDown.jpeg",
+    "song":"Burn Down"
+  },
+    {
+    "name":"<a href='jakeDenver.html'>Jake Denver</a>",
+    "image": "img/trapped.jpeg",
+    "song":"Trapped"
+  },
+{
+    "name":"<a href='jakeDenver.html'>Jake Denver</a>",
+    "image": "img/chained.jpeg",
+    "song":"Chained"
+  },
+    {
+    "name":"<a href='chrissyKay.html'>Chrissy Kay</a>",
+    "image": "img/bareit.jpeg",
+    "song":"Bare It"
+  },
+    {
+    "name":"<a href='tempted.html'>Tempted</a>",
+    "image": "img/darkside.jpeg",
+    "song":"Bare It"
+  },
+    {
+    "name":"<a href='tempted.html'>Tempted</a>",
+    "image": "img/lonelystreets.jpeg",
+    "song":"Lonely Streets"
+  }
+
+
+
+]

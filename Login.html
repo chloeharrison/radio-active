@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!---CSS--->
+      <link href="css/style.css" rel="stylesheet">
+	  <!---Ajax--->
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      
+      <link href="https://fonts.googleapis.com/css?family=Gugi|Open+Sans:700" rel="stylesheet">
+
+      <link href="css/style2.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+
+    <head>
+        
+<style>
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto; 
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.button {
+    background-color: limegreen;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+    
+.button:hover {
+    background-color: lawngreen;
+}
+
+h1{
+    font-size: 50px;
+    color: lawngreen;
+}
+    
+#myProgress {
+  width: 40%;
+  background-color: #ddd;
+  position: absolute;
+  left: 30%;
+}
+
+#myBar {
+  height: 30px;
+  background-color: lawngreen;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  color: white;
+}
+</style>
+    
+
+
+<script type="text/javascript">
+    function validatepass() {
+        var password = document.getElementById("password").value
+        var confirm = document.getElementById("confirm").value
+        if(password != confirm) {
+            alert('Please ensure that the passwords are matching!');
+        }
+    }
+    
+    function validateForm() {
+    var x = document.forms["myform2"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 12);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+function makeCookies(){
+            var setUsername = document.myform.username.value;
+            var setPassword = document.myform.password.value;
+            if(setUsername == "" || setPassword == ""){
+                window.alert("Please register with a username and password");
+            }
+            else{
+            setCookie("username", setUsername);
+            setCookie("password", setPassword);
+            window.alert("registered");  
+            } 
+        }
+        
+        
+        function setCookie(name,value,expires,path,domain,secure){
+            var temp = name + "=" + escape(value);
+            if (expires){
+                temp += "; expires=" + expires.toGMTString();
+            }
+            if (path){
+                temp += ";path=" + path;
+            }if (domain){
+                temp += ";domain=" + domain;
+            }
+            if (secure){
+                temp += ";secure";
+            }
+            document.cookie = temp;
+        }
+        
+        function getCookies(name){
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+	while (i < clen) {
+		var j = i + alen;
+		if (document.cookie.substring(i,j) == arg){
+			return getCookieVal(j);
+		}
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i == 0) break;
+	}
+	return null;
+}
+        
+        function getCookieVal(offset){
+	var endstr = document.cookie.indexOf(";", offset);
+	if (endstr == -1){
+		endstr = document.cookie.length;
+	}
+	return unescape(document.cookie.substring(offset,endstr));
+}
+    
+       function showCookies(){
+           var setUsername = document.myform.username.value;
+            var setPassword = document.myform.password.value;
+            if ((getCookies("username") == setUsername) && (getCookies("password") == setPassword)){
+                window.alert("Welcome back " + getCookies("username"));
+                window.location.href = 'colourChange.html';
+            }
+            else{   
+                window.alert("Invalid Login, please try again");
+            }
+        }
+</script>
+        
+        
+        
+        
+        </head>
+    
+
+    <body bgcolor="#34495E" onload="move()">
+        <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+	  <img id="brand-image" alt="Website Logo" src="img/logo.png" id="logoImg"/>
+	  </a>
+        
+    </div>
+      
+       
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        
+        <ul class="nav navbar-nav navbar-left">
+          
+        <li class="dropdown">
+          <a href="genres.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="genreNav">Genres<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="pop.html">Pop</a></li>
+            <li><a href="rnb.html">RnB</a></li>
+            <li><a href="rock.html">Rock</a></li>
+          </ul>
+        </li>
+            
+          
+           <li><a href="newArtists.html">New Artists</a></li>
+          
+           <li><a href="featuredArtist.html">Featured Artist</a></li>
+
+        
+      </ul>
+        
+      
+      <ul class="nav navbar-nav navbar-right">
+          
+          <li><a href="Register.html">Register</a></li>
+          
+        <li><a href="Login.html">Login</a></li>
+          
+           <li><a href="contact.html">Contact Us</a></li>
+          
+           <li><a href="checkout.html">Cart</a></li>
+
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+ 
+        
+        
+        
+        <center><p><b><font color="lawngreen">Loading...</font></b></p></center>
+
+<div id="myProgress">
+  <left><div id="myBar">0%</div></left>
+</div><br><br><br>
+        
+    <center><h1>RADIO-ACTIVE</h1></center>
+            <center><form name="myform"> 
+        <b><font size="6"><font color="white">Username:</font></font></b><br>
+<input type="text" name="username2" placeholder="Username..." style="width: 250px; height: 30px"><br><br>
+    
+        <b><font size="6"><font color="white">Password:</font></font></b><br>
+<input type="password" name="password2" placeholder="**********" style="width: 250px; height: 30px"><br><br>
+                
+        </form>
+        <button onclick="window.location='index.html';makeCookies();" class="button" value="LOGIN">LOGIN</button><br>
+        <input type="reset" class="button" value="RESET"></center>
+
+  </body>
+      </html>
